@@ -28,8 +28,12 @@ gcc main.c student.c -o student_management
 
 ## Sample Output
 
-1        YUVABALAJII     80.00   90.00   85.00   Total: 255.00 | Average: 85.00
-2        PRIYA           70.00   60.00   90.00   Total: 220.00 | Average: 73.33
+RollNo  Name           M1      M2      M3      Total          Average
+---------------------------------------------------------------------------
+1       YUVABALAJII    89.00   89.00   90.00   268.00         89.33
+2       KARTHIK        75.00   82.00   78.00   235.00         78.33
+3       SNEHA          90.00   88.00   95.00   273.00         91.00
+4       RAHUL          65.00   70.00   72.00   207.00         69.00
 
 ## About
 
