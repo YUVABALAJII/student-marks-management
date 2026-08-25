@@ -19,22 +19,27 @@ void addstudent()
 }
 void viewstudent()
 {
-    if(count==0)
+    if (count == 0)
     {
-        printf("No students to show:\n\n");
+        printf("No students to show.\n\n");
         return;
     }
-    for(int i=0;i<count;i++)
+
+    printf("%-8s%-15s%-8s%-8s%-8s%-15s%-15s\n", "RollNo", "Name", "M1", "M2", "M3", "Total", "Average");
+    printf("---------------------------------------------------------------------------\n");
+
+    for (int i = 0; i < count; i++)
     {
-        float total =0;
-        printf("%-8d",students[i].rollno);
-        printf("%-15s",students[i].name);
-        for(int j=0;j<3;j++)
+        float total = 0;
+        printf("%-8d", students[i].rollno);
+        printf("%-15s", students[i].name);
+        for (int j = 0; j < 3; j++)
         {
-            printf("%-8.2f",students[i].marks[j]);
-            total=total+students[i].marks[j];
+            printf("%-8.2f", students[i].marks[j]);
+            total = total + students[i].marks[j];
         }
-        printf("Total: %-10.2f | Average: %-10.2f\n",total,total/3);
-        printf("\n\n");
+        printf("%-15.2f", total);
+        printf("%-15.2f\n", total / 3);
+        printf("\n");
     }
 }
